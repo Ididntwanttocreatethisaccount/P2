@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Dungeon{% endblock %}
+
+{% block body %}
+    <h1>Edit Dungeon</h1>
+
+    {{ include('dungeon/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('dungeon_index') }}">back to list</a>
+
+    {{ include('dungeon/_delete_form.html.twig') }}
+{% endblock %}
